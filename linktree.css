@@ -1,0 +1,92 @@
+/* Reset CSS dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+/* Container utama */
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  background: #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profil */
+.profile img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.profile h1 {
+  font-size: 20px;
+  margin-bottom: 2px;
+  color: #6200ff;
+}
+
+.profile p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #6200ff;
+}
+
+/* Link button */
+.links a {
+  display: block;
+  text-decoration: none;
+  color: #58a3ff;
+  background: #fff;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+  /* Menambahkan transisi untuk background, transform, dan bayangan */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Styling untuk ikon di dalam link */
+.links a i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Efek hover untuk link button */
+.links a:hover {
+  background: #58a3ff;
+  color:#fff;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .profile img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile h1 {
+    font-size: 20px;
+  }
+  
+  .profile p {
+    font-size: 14px;
+  }
+}
